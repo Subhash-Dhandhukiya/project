@@ -18,7 +18,7 @@ const MyDrawer = () => {
             <Drawer.Navigator
                 drawerType={dimention.width >= 768 ? 'slide' : 'front'}
                 initialRouteName={FIRSTSCREEN}
-                backBehavior="history"
+                backBehavior="order"
             >
                 <Drawer.Screen
                     name={FIRSTSCREEN}

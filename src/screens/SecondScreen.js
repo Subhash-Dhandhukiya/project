@@ -4,10 +4,10 @@ import { View, Text,StyleSheet } from 'react-native'
 const SecondScreen = ({navigation,route}) => {
 
     const data=route.params.data;
-    console.log(data)
+    
 
     return (
-        <View style={styles.container}>
+        <View style={styles.container}> 
             <Text>{data}</Text>
         </View>
     )

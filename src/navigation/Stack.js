@@ -15,6 +15,7 @@ const NavContainer = () => {
                 <Stack.Screen
                     name={FIRSTSCREEN}
                     component={FirstScreen}
+                    initialParams={"Subhash"}
                 />
 
                 <Stack.Screen
