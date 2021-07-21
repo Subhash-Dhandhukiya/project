@@ -1,14 +1,11 @@
 import React from 'react'
 import { View, Text,StyleSheet } from 'react-native'
 
-const SecondScreen = ({navigation,route}) => {
-
-    const data=route.params.data;
-    
+const SecondScreen = ({navigation,route}) => {    
 
     return (
         <View style={styles.container}> 
-            <Text>{data}</Text>
+            <Text>This is Second Screen</Text>
         </View>
     )
 }

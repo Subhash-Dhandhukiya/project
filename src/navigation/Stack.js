@@ -5,6 +5,7 @@ import {createStackNavigator} from '@react-navigation/stack'
 
 import {FIRSTSCREEN,SECONDSCREEN} from '../Constant/Route'
 import {FirstScreen,SecondScreen} from '../screens/index'
+import Icon from 'react-native-vector-icons/AntDesign'
 
 const Stack=createStackNavigator();
 
@@ -15,7 +16,7 @@ const NavContainer = () => {
                 <Stack.Screen
                     name={FIRSTSCREEN}
                     component={FirstScreen}
-                    initialParams={"Subhash"}
+                    
                 />
 
                 <Stack.Screen
