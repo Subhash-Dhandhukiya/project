@@ -1,8 +1,12 @@
 import React from 'react'
 import { StyleSheet, Text, View, Button } from 'react-native'
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import {useDispatch,useSelector} from 'react-redux'
+import {LoadingStart,LoadingStop} from '../redux/action'
 
 const AsyncStorageExample = () => {
+
+    const dispatch=useDispatch();
 
     const object={
         name:"Subhash Dhandhukiya",
@@ -12,9 +16,11 @@ const AsyncStorageExample = () => {
 
     const storeData = async(value) => {
         try {
+            dispatch(LoadingStart());
             const JsonValue=JSON.stringify(object)
             await AsyncStorage.setItem('key', JsonValue)
             .then(()=>console.log("Store Success"))
+            dispatch(LoadingStop())
 
         } catch (error) {
             console.log(error)
