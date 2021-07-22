@@ -1,14 +1,11 @@
 import React from 'react'
-import { StyleSheet, Text, View, StatusBar } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
+import Async from './AsyncStorage'
 
 const FirstScreen = () => {
     return (
         <View>
-            <StatusBar
-                animated
-                barStyle='default'
-                showHideTransition="slide"
-            />
+           <Async/>
         </View>
     )
 }
