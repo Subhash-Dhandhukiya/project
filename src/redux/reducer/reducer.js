@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const initialState=false;
 
 const changeLoading=(state=initialState,action)=>{
@@ -6,6 +8,13 @@ const changeLoading=(state=initialState,action)=>{
             return true;
         case "LOADING_STOP":
             return false;
+        case "CHANGE_COLOR":
+            return (
+                axios.get('http://www.colr.org/json/color/random')
+                    .then((response)=>{
+                        console.log(response.data)
+                    })
+            )
         default:
             return state;
     }

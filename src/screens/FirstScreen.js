@@ -1,11 +1,12 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import Async from './AsyncStorage'
+import SwipeView from './SwipeView'
 
 const FirstScreen = () => {
+
     return (
         <View>
-           <Async/>
+           <SwipeView/>
         </View>
     )
 }

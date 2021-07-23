@@ -9,3 +9,9 @@ export const LoadingStop=()=>{
         type:"LOADING_STOP"
     }
 }
+
+export const changeColor=()=>{
+    return{
+        type:"CHANGE_COLOR"
+    }
+}
